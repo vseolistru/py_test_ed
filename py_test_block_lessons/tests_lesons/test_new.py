@@ -1,11 +1,7 @@
-import pytest
 
-@pytest.fixture()
-def some_func():
-    print('fixture are loading')
 
-def test_hello(some_func):
+def test_hello(set_up):
     print('Hello')
 
-def test_world(some_func):
+def test_world(set_up):
     print('world')
